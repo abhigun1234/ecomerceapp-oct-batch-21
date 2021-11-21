@@ -15,21 +15,21 @@ import ShowHideData from "./ShowHideData";
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <ShowHideData/>
-      </div>
-      // <BrowserRouter>
-      //   <NavBar />
-      //   <Switch>
-      //   <Route path="/" exact component={Dashboard} />
-      //   <Route path="/about1" exact component={AboutUs}></Route>
-      //   <Route path='/contactus' exact component={ContactUs}></Route>
-      //   <Route path='/register' exact component={Register}/>
-      //   <Route path='/mlogin' exact component={MyLogin}/>
-      //   <Route path="*" component={PageNotFoundC} ></Route>
-      //   </Switch>
+//       <div>
+//         <ShowHideData/>
+//       </div>
+      <BrowserRouter>
+        <NavBar />
+        <Switch>
+        <Route path="/" exact component={Dashboard} />
+        <Route path="/about1" exact component={AboutUs}></Route>
+        <Route path='/contactus' exact component={ContactUs}></Route>
+        <Route path='/register' exact component={Register}/>
+        <Route path='/mlogin' exact component={MyLogin}/>
+        <Route path="*" component={PageNotFoundC} ></Route>
+        </Switch>
     
-      // </BrowserRouter>
+      </BrowserRouter>
     );
   }
 }
